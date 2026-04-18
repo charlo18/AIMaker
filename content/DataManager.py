@@ -1,3 +1,7 @@
+"""
+Module to load any torchvision dataset
+"""
+
 import torchvision
 from torchvision import transforms
 from torch.utils.data import DataLoader

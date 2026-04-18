@@ -1,10 +1,19 @@
+"""
+Module for training and testing model from torch
+"""
+
+# local imports
 from names import names
-import random
-from torch import nn
 import utils
+
+# extern import
+import random
+import tqdm
+
+# torch imports
+from torch import nn
 from torch.utils.data import DataLoader
 import torch
-import tqdm
 
 
 class TrainTestManager:
