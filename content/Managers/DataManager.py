@@ -33,6 +33,7 @@ class DataManager:
         self.test_loader = DataLoader(
             self.test_dataset, batch_size=batch_size, shuffle=False
         )
+        self.nb_classes = len(self.train_dataset.classes)
 
     def _augment_training(self) -> bool:
         self._train_transform = transforms.Compose(
